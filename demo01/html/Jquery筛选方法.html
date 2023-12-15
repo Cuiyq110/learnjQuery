@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            // alert($(".son").parent());
+        //     子 第一个孩子
+        //     alert($(".nav").children().html());
+        //     所有的孩子
+            $(".nav").find("p").css("background","pink");
+
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="yeye">
+    <div class="father">
+        <div class="son">儿子</div>
+    </div>
+</div>
+
+<div class="nav">
+    <p>我是屁</p>
+    <div>
+        <p>我是p1</p>
+    </div>
+</div>
+</body>
+</html>
