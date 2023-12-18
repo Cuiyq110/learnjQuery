@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width:150px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("button").eq(0).click(function () {
+                $("div").show(500,alert(1));
+            });
+            $("button").eq(1).click(function () {
+                $("div").hide(500,alert(2));
+            })
+        })
+    </script>
+
+
+</head>
+<body>
+    <button>下滑动</button>
+    <button>上滑动</button>
+    <button>滑动切换</button>
+    <div>
+    </div>
+</body>
+</html>
