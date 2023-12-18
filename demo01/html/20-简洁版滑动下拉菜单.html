@@ -136,7 +136,9 @@
 
         // 滑动切换
         $(".nav li").hover(function () {
-            $(this).children("ul").slideToggle();
+            // 停止动画队列slidetoggle前加上stop
+            $(this).children("ul").stop().slideToggle();
+
         })
     })
 </script>
