@@ -10,9 +10,20 @@
 
     <script>
         $(function () {
+/*            // 1.添加类
             $("div").click(function () {
                 $(this).addClass("current");
             });
+
+        //     2.删除类
+            $("div").click(function () {
+                $(this).removeClass("current");
+            });*/
+
+            $("div").click(function () {
+                $(this).toggleClass("current");
+            });
+
         })
     </script>
     <style>
