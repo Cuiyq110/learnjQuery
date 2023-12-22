@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $(function () {
+        // alert($(":checkbox:first").attr("name","abc"));
+        alert($(":checkbox").prop("checked"));// 官方觉得返回undefined是一个错误
+      })
+  </script>
+</head>
+<body>
+<br/>
+多选：
+<input name="checkbox" type="checkbox" checked="checked" value="checkbox1" />checkbox1
+<input name="checkbox" type="checkbox" value="checkbox2" />checkbox2
+<br/><br/>
+<div>1234</div>
+<div>1234</div>
+</body>
+</html>
