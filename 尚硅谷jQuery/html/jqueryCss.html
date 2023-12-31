@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Insert title here</title>
+  <style type="text/css">
+
+    div{
+      width:100px;
+      height:260px;
+    }
+
+    div.whiteborder{
+      border: 2px white solid;
+    }
+
+    div.redDiv{
+      background-color: red;
+    }
+
+    div.blueBorder{
+      border: 5px blue solid;
+    }
+
+  </style>
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+
+    $(function(){
+
+      var $div = $(".border");
+
+    //   添加类
+      $("#btn01").click(function(){
+        $div.addClass("redDiv");
+      })
+
+      // 删除类
+      $("#btn02").click(function(){
+        $div.removeClass("redDiv");
+      })
+
+    //对类进行添加删除切换
+      $("#btn03").click(function(){
+        $div.toggleClass('blueBorder');
+      })
+    })
+  </script>
+</head>
+<body>
+<table align="center">
+  <tr>
+    <td>
+      <div class="border">
+      </div>
+    </td>
+
+    <td>
+      <div class="btn">
+        <input type="button" value="addClass()" id="btn01"/>
+        <input type="button" value="removeClass()" id="btn02"/>
+        <input type="button" value="toggleClass()" id="btn03"/>
+        <input type="button" value="offset()" id="btn04"/>
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+
+<br /> <br />
+
+
+<br /> <br />
+
+
+
+</body>
+</html>
